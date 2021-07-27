@@ -1,13 +1,88 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Ubuntu";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  max-width: 500px;
+  border-left: 1px solid blue;
+  border-bottom: 1px solid blue;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-radius: 10px;
+  padding: 30px;
+  min-height: 300px;
+  margin: 40px auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 0.4rem;
+  color: #fff;
+  background-color: black;
+  border: 0px;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.task {
+  background-color: #d0d0d0;
+  font-size: 1rem;
+  margin: 5px;
+  padding: 5px 20px;
+}
+
+.task h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reminder {
+  border-left: 5px solid green;
+}
+
+.add-form {
+  margin-bottom: 40px;
+}
+
+.form-control {
+  margin: 10px 0;
+}
+
+.form-control label {
+  display: block;
+}
+
+.form-control input {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+  box-sizing: border-box;
+}
+
+.form-control-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.form-control-check label {
+  flex: 1;
+}
+
+.form-control-check input {
+  flex: 2;
+  height: 20px;
 }
